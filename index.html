@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>抽奖页面</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/sty.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</head>
+<body>
+	<header class="themes">
+		<div class="products">规则</div>
+		<div class="products_description">
+			<div class="rule">
+				<h1>大转盘规则</h1>
+				<span class="hide">×</span>
+				<div class="content">
+					<p>自然的规则,一定要使我老下去,丝毫也不足为奇的。--鲁迅《答杨邨人先生公开信的公开信》自然的规则,一定要使我老下去,丝毫也不足为奇的。--鲁迅《答杨邨人先生公开信的公开信》自然的规则,一定要使我老下去,丝毫也不足为奇
+					</p>
+					
+				</div>
+			</div>
+		</div>
+		<div class="log" >
+			<img src="img/bg1.png">
+		</div>
+		<div class="message">
+			还有0次抽奖机会
+		</div>
+		<div class="banner">
+			<div class="turnplate">
+				<canvas class="item" id="wheelcanvas" width="422px" height="422px" style="transform: rotate(324deg);"></canvas>
+				<img class="pointer" src="img/turnplate-pointer.png">
+			</div>
+		</div>
+	</header>
+	<main style="background:#ea9e28;">	
+		<ul class="wrap">
+			<div class="title" >
+				<img src="img/h1.png" style="width: 80%;">
+			</div>
+			<li style="margin-top: 10px; ">
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs4.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs3.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+			<li>
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs4.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs3.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+			<li>
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs3.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs4.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+			<li>
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs2.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs1.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+			<li>
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs2.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs4.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+			<li>
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs2.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs1.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+			<li>
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs3.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs2.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+		</ul>
+		<content></content>
+	</main>
+	<footer>
+		<div class="hdk-copyright">技术支持：互动酷</div>
+	</footer>
+</body>
+<script type="text/javascript">
+	$(".products").click(function(){
+		$(".products_description").show()
+	});
+	$(".hide").click(function(){
+		$('.products_description').hide()
+	});
+</script>
+<script type="text/javascript">
+	$(window).scroll(function(){
+	    var dmt = $(document).height(); //文件的总高度
+	    var wid = $(window).height();   //可视区域高度
+	    var top = $(window).scrollTop()   // 滚动高度
+	    if(dmt-wid<=top+2){               //文件高度-可视高度<=滚动高度
+	      for(var i=0;i<1;i++){           //for:滚动一次执行一次
+	        var html='<li><div class="center-left"><div class="img"><img src="img/cs2.jpg"alt="商品图片"></div><div class="text"><p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p></div><div class="btn"><a href="#">立即购买</a></div></div><div class="center-left right"><div class="img"><img src="img/cs1.jpg"alt="商品图片"></div><div class="text"><p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p></div><div class="btn"><a href="#">立即购买</a></div></div></li><li><div class="center-left"><div class="img"><img src="img/cs3.jpg"alt="商品图片"></div><div class="text"><p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p></div><div class="btn"><a href="#">立即购买</a></div></div><div class="center-left right"><div class="img"><img src="img/cs2.jpg"alt="商品图片"></div><div class="text"><p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p></div><div class="btn"><a href="#">立即购买</a></div></div></li>'
+	         console.log(i)
+	      }
+	      $('.wrap').append(html);
+	    }
+	});
+</script>
+<script type="text/javascript">
+	var turnplate={
+			restaraunts:[],				//大转盘奖品名称
+			colors:[],					//大转盘奖品区块对应背景颜色
+			outsideRadius:192,			//大转盘外圆的半径
+			textRadius:155,				//大转盘奖品位置距离圆心的距离
+			insideRadius:68,			//大转盘内圆的半径
+			startAngle:0,				//开始角度
+			bRotate:false			//false:停止;ture:旋转
+	};
+</script>
+</html>
