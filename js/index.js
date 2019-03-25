@@ -458,25 +458,25 @@ $(document).ready(function(){
                   img.onload=function(){  
                       ctx.drawImage(img,-15,10);      
                   }; 
-                  ctx.drawImage(img,-15,10);  
+                  ctx.drawImage(img,-15,10,38,32);  
               }else if(text.indexOf("谢谢参与")>=0){
                   var img= document.getElementById("sorry-img");
                   img.onload=function(){  
                       ctx.drawImage(img,-15,10);      
                   };  
-                  ctx.drawImage(img,-15,10);  
+                  ctx.drawImage(img,-15,10,38,32);  
               }else if(text.indexOf("杨柳最帅")>=0){
                   var img= document.getElementById("yang-img");
                   img.onload=function(){  
                       ctx.drawImage(img,-15,10);      
                   };  
-                  ctx.drawImage(img,-15,10);  
+                  ctx.drawImage(img,-15,10,38,32);  
               }else if(text.indexOf("大功告成")>=0){
                   var img= document.getElementById("fa-img");
                   img.onload=function(){  
                       ctx.drawImage(img,-15,10);      
                   };  
-                  ctx.drawImage(img,-15,10);  
+                  ctx.drawImage(img,-15,10,38,32);  
               }
 
               //把当前画布返回（调整）到上一个save()状态之前 
