@@ -195,10 +195,10 @@ li{list-style: none;}
 .pointer-position{
      /*border: 1px solid red; */
     position: absolute;
-    width: 20%;
-    height: 20%;
-    left: 40%;
-    top: 40%;
+    width: 23%;
+    height: 23%;
+    left: 39%;
+    top: 38.4%;
     border-radius: 50%;
     background-image: linear-gradient(180deg,#ffe2a4,#ffc03a);
 }
