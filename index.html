@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>抽奖页面</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/sty.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<style type="text/css">
+	@media only screen and (max-width:560px) {
+    html {
+        -webkit-text-size-adjust:none;
+        font-size:22.66667vw;
+    }
+	}
+	@media only screen and (min-width:559px) {
+	    html {
+	        -webkit-text-size-adjust:none;
+	        font-size:9.66667vw;
+	    }
+	}
+	</style>
+</head>
+<body>
+	<header class="themes">
+		<div class="products" onclick="_show('products_description')" style="right: 0px;border-radius: 25px 0px 0px 25px;">规则</div>
+		<div class="products_description">
+			<div class="rule" >
+				<h1>大转盘规则</h1>
+				<span class="hide" onclick="_hide('products_description')">×</span>
+				<div class="content">
+					<p>自然的规则,一定要使我老下去,丝毫也不足为奇的。--鲁迅《答杨邨人先生公开信的公开信》自然的规则,一定要使我老下去,丝毫也不足为奇的。--鲁迅《答杨邨人先生公开信的公开信》自然的规则,一定要使我老下去,丝毫也不足为奇自然的规则,一定要使我老下去,丝毫也不足为奇的。--鲁迅《答杨邨人先生公开信的公开信》自然的规则,一定要使我老下去,丝毫也不足为奇的。--鲁迅《答杨邨人先生公开信的公开信》自然的规则,一定要使我老下去,丝毫也不足为奇自然的规则,一定要使我老下去,丝毫也不足为奇的。--鲁迅《答杨邨人先生公开信的公开信》自然的规则,一定要使我老下去,丝毫也不足为奇的。--鲁迅《答杨邨人先生公开信的公开信》自然的规则,一定要使我老下去,丝毫也不足为奇
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="enroll" onclick="_show('enroll_description')" style="left: 0px;border-radius: 0px 25px 25px 0px;">报名</div>
+		<div class="enroll_description">
+			<div class="enroll_description_rule" style="">	
+				<span class="disappear" onclick="_hide('enroll_description')">×</span>
+				<div class="information">
+					<div class="header">
+						<img src="img/header.png" style="width:90%;margin-top: 10px;"> 
+					</div>
+					<div class="input-block" style="margin-top: 45px;">
+						<img src="img/user.png" style="width: 24px">
+						<input type="text" placeholder="请输入姓名">
+					</div>
+					<div class="input-block">
+						<img src="img/telephone.png" style="width: 24px">
+						<input type="text" placeholder="请输入手机号码" maxlength="11">
+					</div>
+					<div class="input-block">
+						<img src="img/address.png" style="width: 24px">
+						<input type="text" placeholder="请输入地址">
+					</div>
+				</div>
+				<div class="bg"></div>
+				<div class="btn_bg"><button>确定</button></div>
+			</div>
+		</div>
+
+		<a href="my_prize.html"class="my_prize" style="left: 0px;top:50px; border-radius: 0px 25px 25px 0px;">我的奖品</a>
+
+		<div class="log">
+			<img src="img/bg1.png">
+		</div>
+		<div class="message">还有0次抽奖机会</div>
+		<div class="banner">
+			<img src="img/gift4.png" id="fa-img" style="display: none;">
+			<img src="img/gift3.png" id="yang-img" style="display: none;">
+			<img src="img/gift2.png" id="shan-img" style="display: none;">
+			<img src="img/gift1.png" id="sorry-img" style="display: none;">
+			<div class="turnplate">
+				<div class="wheel-bulb">
+			      <i class="bulb bulb-0" style="transform: rotate(0deg);"></i>
+			      <i class="bulb bulb-1" style="transform: rotate(22.5deg);"></i>
+			      <i class="bulb bulb-2" style="transform: rotate(45deg);"></i>
+			      <i class="bulb bulb-3" style="transform: rotate(67.5deg);"></i>
+			      <i class="bulb bulb-4" style="transform: rotate(90deg);"></i>
+			      <i class="bulb bulb-5" style="transform: rotate(112.5deg);"></i>
+			      <i class="bulb bulb-6" style="transform: rotate(135deg);"></i>
+			      <i class="bulb bulb-7" style="transform: rotate(157.5deg);"></i>
+			      <i class="bulb bulb-8" style="transform: rotate(180deg);"></i>
+			      <i class="bulb bulb-9" style="transform: rotate(202.5deg);"></i>
+			      <i class="bulb bulb-10" style="transform: rotate(225deg);"></i>
+			      <i class="bulb bulb-11" style="transform: rotate(247.5deg);"></i>
+			      <i class="bulb bulb-12" style="transform: rotate(270deg);"></i>
+			      <i class="bulb bulb-13" style="transform: rotate(292.5deg);"></i>
+			      <i class="bulb bulb-14" style="transform: rotate(315deg);"></i>
+			      <i class="bulb bulb-15" style="transform: rotate(337.5deg);"></i>
+			    </div>
+				<canvas class="item" id="wheelcanvas" width="422px" height="422px" style="transform: rotate(324deg);"></canvas>
+				<img class="pointer" src="img/turnplate-pointer.png">
+				<div  class="pointer-position pointer">
+					<img class="pointer-text" src="img/turnplate-pointer-text.png">
+				</div>
+				<div class="prize">
+					<div class="prize_bg1">
+						<div class="money">
+							<span>恭喜你</br>获得帅哥一个</span>
+							<p>- 2019:9:9后过期 -</p>
+						</div>
+						<img src="img/bg.png"style="width: 100%;">
+						<div class="share">
+							<a href="commodity.html">分享好友，立得4元</a>
+							<p>不翻倍，直接领取</p>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+		<div class="time-line">
+			<p class="time_text">
+				活动结束倒计时
+				<span class="primary-bg-color">29</span>
+				<span class="time_text">天</span>
+				<span id="hours" class="primary-bg-color">10</span>
+				<span class="time_text">时</span>
+				<span id="minu" class="primary-bg-color">23</span>
+				<span class="time_text">分</span>
+				<span id="seco" class="primary-bg-color">58</span>
+				<span class="time_text">秒</span>
+			</p>
+		</div>
+	</header>
+	<main style="background:#ea9e28;max-width: 560px;margin: 0 auto;">	
+		<ul class="wrap">
+			<div class="title" >
+				<img src="img/h1.png" style="width: 60%;">
+			</div>
+			<li style="margin-top: 10px; ">
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs4.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs3.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+			<li>
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs4.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs3.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+			<li>
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs3.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs4.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+			<li>
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs2.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs1.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+			<li>
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs2.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs4.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+			<li>
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs2.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs1.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+			<li>
+				<div class="center-left">
+					<div class="img">
+						<img src="img/cs3.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+				<div class="center-left right">
+					<div class="img">
+						<img src="img/cs2.jpg" alt="商品图片">
+					</div>
+					<div class="text">
+						<p>活动价￥<b style="font-size: 16px">20.99</b><s style="color: #ccc;">￥19.99</s></p>
+					</div>
+					<div class="btn"><a href="#">立即购买</a></div>
+				</div>
+			</li>
+		</ul>
+		<content></content>
+	</main>
+</body>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript">
+	var turnplate={
+			restaraunts:[],				//大转盘奖品名称
+			colors:[],					//大转盘奖品区块对应背景颜色
+			outsideRadius:180,			//大转盘外圆的半径
+			textRadius:155,				//大转盘奖品位置距离圆心的距离
+			insideRadius:54,			//大转盘内圆的半径
+			startAngle:0,				//开始角度
+			bRotate:false			//false:停止;ture:旋转
+	};
+</script>
+</html>
